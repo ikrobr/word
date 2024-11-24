@@ -13,9 +13,9 @@
         <main>
             <section id="border">
                 <p id="nameuser">Nome de usuário ou e-mail</p>
-                <input class="input" type="email" name="email" id="iemail">
+                <input class="input" type="email" name="email" id="iemail" required>
                 <p>Senha</p>
-                <input class="input" type="password" name="senha" id="isenha">
+                <input class="input" type="password" name="senha" id="isenha" required>
                 <br>
                 <input type="checkbox" name="lembrar" id="ilembrar">
                 <label id="lembrar" class="lem-acess" for="ilembrar">Lembrar-me</label>
@@ -27,5 +27,27 @@
             </footer>
         </main>
     </form>
+
+    <script>
+        // Certifique-se de que o DOM foi carregado antes de executar o script
+        document.addEventListener("DOMContentLoaded", () => {
+            // Seleciona o botão pelo ID
+            const botaoAcessar = document.getElementById("acessar");
+
+            // Adiciona o evento de clique no botão
+            botaoAcessar.addEventListener("click", () => {
+                // Verifica se os campos de email e senha estão preenchidos
+                const email = document.getElementById("iemail").value.trim();
+                const senha = document.getElementById("isenha").value.trim();
+
+                if (email === "" || senha === "") {
+                    alert("Por favor, preencha todos os campos.");
+                } else {
+                    // Redireciona para a URL desejada
+                    window.location.href = "agradecimento.html";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
