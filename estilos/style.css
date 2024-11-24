@@ -14,7 +14,10 @@ header > img {
     display: block;
     margin: auto;
     width: 15%;
+    margin-bottom: 80px;
 }
+
+
 
 section {
     border: 2px solid rgba(0, 0, 0, 0.208);
@@ -22,12 +25,18 @@ section {
     color: rgba(0, 0, 0, 0.679);
     margin-left: 70px;
     margin-right: 70px;
+    margin-top: -60px;
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-    
+    width: 350px;
+    height: 255px;
+    margin: auto;
 }
 
+#nameuser {
+    margin-top: 30px;
+}
 
 section > p{
     padding: 3px;
@@ -50,10 +59,19 @@ section > p{
     
 }
 
+#lembrar {
+    margin-right:20px;
+}
+
+.lem-acess {
+    margin-top: 40px;
+}
+
 footer {
     color: rgba(0, 0, 0, 0.679);
-    margin-top: 30px;
-    margin-left: 90px;
+    margin-top: 80px;
+    text-align: center;
+    
 }
 
 footer a{
