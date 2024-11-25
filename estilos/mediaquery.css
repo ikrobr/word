@@ -1,4 +1,16 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 768px){
+    #imgpc {
+        width: 130px;
+    }
 
+    section {
+        margin-top: -20px;
+    }
+
+    footer {
+        margin-top: 26px;
+    }
+}
 
